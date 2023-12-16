@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function Board() {
+  return (
+    <h2>hui</h2>
+  )
+}
+
+
+function ChessApp() {
   return (
     <div className="App">
-      test
+      <h1>Chess</h1>
+      <Board />
+
     </div>
   );
 }
 
-export default App;
+export default ChessApp;
