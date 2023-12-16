@@ -3,7 +3,9 @@ import './App.css';
 
 function Board() {
   return (
-    <h2>hui</h2>
+    <div id='board'>
+
+    </div>
   )
 }
 
