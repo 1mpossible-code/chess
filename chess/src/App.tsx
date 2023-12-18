@@ -3,12 +3,78 @@ import './App.css';
 
 function Board() {
   return (
-    <div id='board'>
-
-    </div>
-  )
+  <div id='board'>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+      <div>cell</div>
+  </div>
+  );
 }
-
 
 function ChessApp() {
   return (
