@@ -2,5 +2,17 @@
   height: 800px;
   width: 800px;
   background-color: #b58863;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#board .tile {
+  width: 100px;
+  height: 100px;
+  background-color: #eeeed2;
+}
+
+#board .tile-black {
+  background-color: #b58863;
 }
 
