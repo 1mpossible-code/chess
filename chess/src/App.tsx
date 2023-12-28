@@ -1,87 +1,11 @@
 import React from 'react';
 import './App.css';
-
-function Board() {
-  return (
-  <div id='board'>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-      <div>cell</div>
-  </div>
-  );
-}
+import Board from './components/Board'
 
 function ChessApp() {
   return (
-    <div className="App">
-      <h1>Chess</h1>
+    <div className="App" >
       <Board />
-
     </div>
   );
 }
