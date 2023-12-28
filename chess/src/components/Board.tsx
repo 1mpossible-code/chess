@@ -7,13 +7,13 @@ const verticalAxis = [1, 2, 3, 4, 5, 6, 7, 8]
 export default function Board() {
   let board = [];
 
-  for (let i = 0; i < horizontalAxis.length; i++) {
-    for (let j = 0; j < verticalAxis.length; j ++) {
-      if ((i + j ) % 2 === 0) {
-        board.push(<div className="tile ">{horizontalAxis[i]}{verticalAxis[j]}</div>);
+  for (let i = 7; i >= 0; i--) {
+    for (let j = 0; j < verticalAxis.length; j++) {
+      if ((i + j) % 2 === 0) {
+        board.push(<div className="tile tile-black">{horizontalAxis[j]}{verticalAxis[i]}</div>);
       }
       else {
-        board.push(<div className="tile tile-black">{horizontalAxis[i]}{verticalAxis[j]}</div>);
+        board.push(<div className="tile">{horizontalAxis[j]}{verticalAxis[i]}</div>);
       }
     }
   }
