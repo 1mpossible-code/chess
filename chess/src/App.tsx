@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import AppCSS from './App.module.css';
 import Board from './components/Board'
 
 function ChessApp() {
   return (
-    <div className="App" >
+    <div className={AppCSS.app} >
       <Board />
     </div>
   );

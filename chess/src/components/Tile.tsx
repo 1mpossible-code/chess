@@ -1,4 +1,4 @@
-import './Tile.css';
+import TileCSS from'./Tile.module.css';
 
 interface Props {
   number: number,
@@ -7,8 +7,8 @@ interface Props {
 
 export default function Tile({number, image}: Props) {
   if (number % 2 == 0) {
-    return <div className="tile tile-black"><img src={image}/></div>
+    return <div className={`${TileCSS.tile} ${TileCSS.tileblack}`}><img src={image}/></div>
   } else {
-    return <div className="tile"><img src={image}/></div>
+    return <div className={TileCSS.tile}><img src={image}/></div>
   }
 }

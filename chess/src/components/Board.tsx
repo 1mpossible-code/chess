@@ -1,6 +1,6 @@
 import React from 'react';
 import Tile from "./Tile";
-import './Board.css';
+import BoardCSS from './Board.module.css';
 
 const horizontalAxis = ["A", "B", "C", "D", "E", "F", "G", "H"]
 const verticalAxis = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -55,6 +55,6 @@ export default function Board() {
       board.push(<Tile number={number} image={image}></Tile>)
     }
   }
-  return <div id="board">{board}</div>
+  return <div id={BoardCSS.board}>{board}</div>
 }
 
