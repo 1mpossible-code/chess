@@ -6,6 +6,14 @@
   background-color: #eeeed2;
 }
 
+.piece {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+}
+
 .tileblack {
   background-color: #b58863;
 }
+
