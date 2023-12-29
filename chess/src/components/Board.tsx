@@ -1,4 +1,5 @@
 import React from 'react';
+import Tile from "./Tile";
 import './Board.css';
 
 const horizontalAxis = ["A", "B", "C", "D", "E", "F", "G", "H"]
@@ -9,12 +10,9 @@ export default function Board() {
 
   for (let i = 7; i >= 0; i--) {
     for (let j = 0; j < verticalAxis.length; j++) {
-      if ((i + j) % 2 === 0) {
-        board.push(<div className="tile tile-black">{horizontalAxis[j]}{verticalAxis[i]}</div>);
-      }
-      else {
-        board.push(<div className="tile">{horizontalAxis[j]}{verticalAxis[i]}</div>);
-      }
+      const number = j + i;
+
+      board.push(<Tile number={number}></Tile>)
     }
   }
   return <div id="board">{board}</div>

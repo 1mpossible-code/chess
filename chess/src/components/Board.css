@@ -6,13 +6,3 @@
   flex-wrap: wrap;
 }
 
-#board .tile {
-  width: 100px;
-  height: 100px;
-  background-color: #eeeed2;
-}
-
-#board .tile-black {
-  background-color: #b58863;
-}
-
