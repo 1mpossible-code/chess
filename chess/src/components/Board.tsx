@@ -13,7 +13,10 @@ interface Piece {
 
 let pieces: Piece[] = [];
 
-pieces.push({image: "assets/white-pawn.png", x: 0, y: 1})
+for(let i = 0; i < 8; i++) {
+  pieces.push({image: "assets/white-pawn.png", x: i, y: 1})
+}
+
 
 
 export default function Board() {
