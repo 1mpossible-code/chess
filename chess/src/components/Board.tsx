@@ -52,7 +52,7 @@ export default function Board() {
         }
       })
 
-      board.push(<Tile number={number} image={image}></Tile>)
+      board.push(<Tile key = {`${j},${i}`} number={number} image={image}></Tile>)
     }
   }
   return <div id={BoardCSS.board}>{board}</div>
