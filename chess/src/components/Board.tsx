@@ -53,7 +53,7 @@ const Board: React.FC = () => {
         }
       });
 
-      board.push(<Tile key={`${j},${i}`} number={number} image={image} />);
+      board.push(<Tile key={`${j},${i}`} id={number} image={image} />);
     }
   }
 
