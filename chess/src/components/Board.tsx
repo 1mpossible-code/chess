@@ -39,7 +39,7 @@ pieces.push({image: "assets/white-queen.png", x: 3, y: 0})
 pieces.push({image: "assets/white-king.png", x: 4, y: 0})
 
 export default function Board() {
-  let board = [];
+  const board = [];
 
   for (let i = 7; i >= 0; i--) {
     for (let j = 0; j < verticalAxis.length; j++) {
@@ -47,7 +47,7 @@ export default function Board() {
       let image = undefined;
 
       pieces.forEach(p => {
-        if (p.x == j && p.y == i) {
+        if (p.x === j && p.y === i) {
           image = p.image
         }
       })
