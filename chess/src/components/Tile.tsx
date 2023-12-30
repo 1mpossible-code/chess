@@ -1,4 +1,4 @@
-import TileCSS from'./Tile.module.css';
+import tileStyle from'./Tile.module.css';
 
 interface TileProps {
   number: number;
@@ -8,14 +8,14 @@ interface TileProps {
 const Tile: React.FC<TileProps> = ({ number, image }) => {
   if (number % 2 === 0) {
     return (
-      <div className={`${TileCSS.tile} ${TileCSS.tileblack}`}>
-        {image && <div className={TileCSS.piece} style={{backgroundImage: `url(${image})`}}></div>}
+      <div className={`${tileStyle.tile} ${tileStyle.tileblack}`}>
+        {image && <div className={tileStyle.piece} style={{backgroundImage: `url(${image})`}}></div>}
       </div>
     );
   } else {
     return (
-      <div className={TileCSS.tile}>
-        {image && <div className={TileCSS.piece} style={{backgroundImage: `url(${image})`}}></div>}
+      <div className={tileStyle.tile}>
+        {image && <div className={tileStyle.piece} style={{backgroundImage: `url(${image})`}}></div>}
       </div>
     );
   }
