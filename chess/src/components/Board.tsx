@@ -57,7 +57,7 @@ const Board: React.FC = () => {
     }
   }
 
-  return <div id={BoardCSS.board}>{board}</div>;
+  return <div className={BoardCSS.board}>{board}</div>;
 };
 
 export default Board;
