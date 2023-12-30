@@ -39,6 +39,13 @@ pieces.push(
   { image: "assets/white-king.png", x: 4, y: 0 }
 );
 
+function grabPiece(e: React.MouseEvent) {
+  const elem = e.target as HTMLElement;
+  if(elem.classList.contains('pieces')) { // DONT WORK
+    console.log(e);
+  }
+}
+
 const Board: React.FC = () => {
   const board: JSX.Element[] = [];
 
@@ -57,7 +64,7 @@ const Board: React.FC = () => {
     }
   }
 
-  return <div className={BoardCSS.board}>{board}</div>;
+  return <div onMouseDown={e => grabPiece(e)} className={BoardCSS.board}>{board}</div>;
 };
 
 export default Board;
