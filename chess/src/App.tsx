@@ -1,13 +1,13 @@
 import React from 'react';
 import AppCSS from './App.module.css';
-import Board from './components/Board'
+import Board from './components/Board';
 
-function ChessApp() {
+const ChessApp = () => {
   return (
-    <div className={AppCSS.app} >
+    <div className={AppCSS.app}>
       <Board />
     </div>
   );
-}
+};
 
 export default ChessApp;
