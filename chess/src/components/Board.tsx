@@ -1,7 +1,7 @@
 import React from 'react';
 import Tile from "./Tile";
 import BoardCSS from './Board.module.css';
-import Draggable from 'react-draggable';
+import Draggable from 'react-draggable'; 
 
 const horizontalAxis: string[] = ["A", "B", "C", "D", "E", "F", "G", "H"];
 const verticalAxis: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -15,7 +15,7 @@ interface Piece {
 const pieces: Piece[] = [];
 
 for (let p = 0; p < 2; p++){
-  const type = (p == 0) ? "black" : "white";
+  const type = (p === 0) ? "black" : "white";
   const y = (p === 0 ) ? 7 : 0;
 
   pieces.push(
@@ -37,6 +37,13 @@ for (let i = 0; i < 8; i++) {
   pieces.push({ image: "assets/black-pawn.png", x: i, y: 6 });
 }
 
+function grabPiece(e: React.MouseEvent) {
+  const element = e.target as HTMLElement;
+  if (element.classList.contains("pieces")) {
+    console.log(element);
+  }
+
+}
 
 const Board: React.FC = () => {
   const board: JSX.Element[] = [];
@@ -52,11 +59,11 @@ const Board: React.FC = () => {
         }
       });
 
-      board.push(<Tile key={`${j},${i}`} id={number} image={image}/>);
+      board.push(<Tile key={`${j},${i}`} id={number} image={image} />);
     }
   }
 
-  return <div className={BoardCSS.board}>{board}</div>;
+  return <div onMouseDown={e => grabPiece(e)} className={BoardCSS.board}>{board}</div>;
 };
 
 export default Board;
