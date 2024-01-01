@@ -41,12 +41,18 @@ function grabPiece(e: React.MouseEvent) {
   if (elem.classList.contains("Tile_piece__dBcW2")) {
     console.log(elem)
 
-    const x = e.clientX;
-    const y = e.clientY;
+    const x = e.clientX - 50;
+    const y = e.clientY - 50;
     elem.style.position = "absolute";
     elem.style.left = `${x}px`;
     elem.style.top = `${y}px`;
   }
+}
+
+function movePiece(e: React.MouseEvent) {
+  const elem = e.target as HTMLElement;
+
+  console.log(elem)
 }
 
 const Board: React.FC = () => {
@@ -67,7 +73,7 @@ const Board: React.FC = () => {
     }
   }
 
-  return <div onMouseDown={e => grabPiece(e)} className={BoardCSS.board}>{board}</div>;
+  return <div onMouseMove={(e) => movePiece(e)} onMouseDown={e => grabPiece(e)} className={BoardCSS.board}>{board}</div>;
 };
 
 export default Board;
