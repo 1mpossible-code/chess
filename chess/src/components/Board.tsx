@@ -40,6 +40,12 @@ function grabPiece(e: React.MouseEvent) {
   const elem = e.target as HTMLElement
   if (elem.classList.contains("Tile_piece__dBcW2")) {
     console.log(elem)
+
+    const x = e.clientX;
+    const y = e.clientY;
+    elem.style.position = "absolute";
+    elem.style.left = `${x}px`;
+    elem.style.top = `${y}px`;
   }
 }
 
