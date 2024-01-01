@@ -1,7 +1,6 @@
 import React from 'react';
 import Tile from "./Tile";
 import BoardCSS from './Board.module.css';
-import Draggable from 'react-draggable'; 
 
 const horizontalAxis: string[] = ["A", "B", "C", "D", "E", "F", "G", "H"];
 const verticalAxis: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -38,11 +37,10 @@ for (let i = 0; i < 8; i++) {
 }
 
 function grabPiece(e: React.MouseEvent) {
-  const element = e.target as HTMLElement;
-  if (element.classList.contains("pieces")) {
-    console.log(element);
+  const elem = e.target as HTMLElement
+  if (elem.classList.contains("Tile_piece__dBcW2")) {
+    console.log(elem)
   }
-
 }
 
 const Board: React.FC = () => {
